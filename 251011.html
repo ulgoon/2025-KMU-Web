@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Transfer Center</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Shop</li>
+          <li>About</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>박찬욱 감독님에 대하여</h1>
+      <h2>Filmography</h2>
+      <table>
+        <caption>대표작</caption>
+        <thead>
+          <tr>
+            <th>연도</th>
+            <th>제목</th>
+            <th>비고</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2000</td>
+            <td>공동경비구역 JSA</td>
+            <td>공동경비구역 JSA</td>
+          </tr>
+          <tr>
+            <td>2003</td>
+            <td>올드보이</td>
+            <td rowspan="2">올드보이</td>
+          </tr>
+          <tr>
+            <td>2022</td>
+            <td>헤어질 결심</td>
+            
+          </tr>
+          <tr>
+            <td>2025</td>
+            <td>어쩔수가 없다</td>
+            <td>어쩔수가 없다</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">합계</td>
+            <td>20편</td>
+          </tr>
+        </tfoot>
+      </table>
+      <!-- GET /signup?id=johndoe&pw=1q2w3e4r -->
+      <!--
+      POST /signup
+      {
+        'id':'johndoe',
+        'pw':'1q2w3e4r'
+      }
+      -->
+      <section>
+        <h2>회원가입하기</h2>
+        <form action="/signup" method="POST">
+          <label for="user-id">Username</label> <input name="username" id="user-id" type="text" maxlength="20" placeholder="Enter Username" required>
+          <label for="user-mail">Email</label> <input name="email" id="user-mail" type="email" placeholder="test@test.com" required>
+          <label for="user-pw">Password</label> <input name="password" id="user-pw" type="password" minlength="8" required>
+          <label for="user-age">Age</label> <input name="age" id="user-age" type="number" size="4" required>
+          <label for="user-birth">Birthday</label> <input name="birth" id="user-birth" type="date">
+          
+          <label for="favorite">가장 좋아하는 영화</label> <input list="movies" name="favorite" id="favorite" type="text">
+          <datalist id="movies">
+            <option value="올드보이"></option>
+            <option value="올드보이스카우트"></option>
+            <option value="공동경비구역 JSA"></option>
+            <option value="어쩔수가 없다"></option>
+            <option value="헤어질 결심"></option>
+          </datalist>
+          
+          <label for="s-movies">가장좋아하는영화</label>
+          <select is="s-movies" name="s-movies">
+            <option value="올드보이">올드보이</option>
+            <option value="올드보이스카우트">올드보이스카우트</option>
+            <option value="공동경비구역 JSA">공동경비구역 JSA</option>
+            <option value="어쩔수가 없다">어쩔수가 없다</option>
+            <option value="헤어질 결심">헤어질 결심</option>
+          </select>
+          
+          <input list="tickmarks" type="range" min="0" max="10">
+          <datalist id="tickmarks">
+            <option value="2"></optio>
+            <option value="4"></optio>
+            <option value="6"></optio>
+            <option value="8"></optio>
+            <option value="9"></optio>
+          </datalist>
+          <fieldset>
+            <legend>유입 경로</legend>
+            <input type="radio" id="insta" name="from" checked> <label for="insta">인스타그램</label>
+            <input type="radio" id="youtube" name="from"> <label for="youtube">유튜브</label>
+            <input type="radio" id="newsletter" name="from"> <label for="newsletter">뉴스레터</label>
+          </fieldset>
+          <fieldset>
+            <legent>관심분야</legend>
+            <input type="checkbox" id="sports" name="interest"> <label for="sports">스포츠</label>
+            <input type="checkbox" id="music" name="interest"> <label for="music">음악</label>
+            <input type="checkbox" id="movie" name="interest" checked> <label for="movie">영화</label>
+          </fieldset>
+          <input type="submit" value="회원가입 제출">
+          <input type="reset" value="값 초기화 하기">
+        </form>
+      </section>
+    </main>
+    <aside>This is aside menu.</aside>
+    <footer>This is footer.</footer>
+    
+  </body>
+</html>
