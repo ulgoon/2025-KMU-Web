@@ -8,8 +8,12 @@
 4. [250927 - HTML(3)](./250927.html)
 5. [251004 - HTML(4)](./251004.html)
 6. [251011 - HTML(5)](./251011.html)
+7. [251018 - HTML(6)](./251018.html)
+8. [251101 - CSS(1)](./251101/)
+9. [251108 - CSS(2)](./251108/)
 
 ## References
 
 - [구조화된 데이터 테스트 도구](https://developers.google.com/search/docs/appearance/structured-data?hl=ko)
 - [Open Graph Official Docs](https://ogp.me/)
+- [MDN Web Docs](https://developer.mozilla.org/ko/docs/Web)
