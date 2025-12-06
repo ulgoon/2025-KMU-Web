@@ -1,11 +1,11 @@
 var outputElement = document.getElementById('target');
 
-// Handler function for DOM0 event handler
+// event Hander function
 function handlerDOMFunction() {
     outputElement.textContent = 'Handler - DOM Clicked';
 }
 
-// Listener function for addEventListener
+// event Listener function
 function listenerFunction() {
     outputElement.textContent = 'Listener Clicked';
 }
@@ -15,6 +15,7 @@ document.getElementById('listener').addEventListener('click', listenerFunction);
 
 var listenerButton = document.getElementById('listener');
 
+// another event listener
 listenerButton.addEventListener('click', function() {
     outputElement.textContent += ' + Another Listener Clicked';
 });
